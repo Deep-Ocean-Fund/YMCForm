@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700"
+    />
+    <link
+      href="assets/plugins/global/plugins.bundle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <style>
+      body {
+        background: #ffede2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex flex-column flex-root">
+      <div class="d-flex flex-column flex-center flex-column-fluid">
+        <div
+          class="d-flex flex-column flex-center p-10 shadow bg-white my-10 card"
+        >
+          <div class="card card-flush w-lg-800px" id="input_form">
+            <div
+              class="mb-10 pb-5"
+              style="border-bottom: 1px solid #e3ebf6; margin-top: -20px"
+            >
+              <header class="fw-bolder m-0 pb-2">
+                <div class="d-inline-flex">
+                  <img
+                    src="./assets/media/logo.png"
+                    class=""
+                    style="height: 70px"
+                  />
+                </div>
+                <div class="d-block text-center" style="margin-top: -50px">
+                  <h1>
+                    <span class="d-inline-block" style="color: #c35257"
+                      >ฟอร์มลงทะเบียน YMC Crypto</span
+                    >
+                  </h1>
+                </div>
+              </header>
+            </div>
+
+            <form
+              class="form"
+              id="ymc_form"
+              name="ymc_form"
+              data-netlify="true"
+              data-netlify-honeypot="b-field"
+            >
+              <input type="hidden" name="partner" value="YMC" />
+              <div class="row mb-5">
+                <div class="col-md-6 fv-row">
+                  <label class="required fs-3 fw-semibold mb-2">ชื่อ</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <fieldset>
+                        <button
+                          class="btn btn-outline-secondary dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <legend id="titlelabel" class="fs-5 mb-0">
+                            คำนำหน้า
+                          </legend>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <label for="title1" class="m-2 d-block">
+                              <input
+                                type="radio"
+                                id="title1"
+                                name="title"
+                                value="นาย"
+                                class="invisible"
+                              />นาย</label
+                            >
+                          </li>
+                          <li>
+                            <label for="title2" class="m-2 d-block">
+                              <input
+                                type="radio"
+                                id="title2"
+                                name="title"
+                                value="นาง"
+                                class="invisible"
+                              />นาง</label
+                            >
+                          </li>
+                          <li>
+                            <label for="title3" class="m-2 d-block">
+                              <input
+                                type="radio"
+                                id="title3"
+                                name="title"
+                                value="นางสาว"
+                                class="invisible"
+                              />นางสาว</label
+                            >
+                          </li>
+                        </ul>
+                      </fieldset>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control form-control-solid-bg"
+                      placeholder=""
+                      name="first_name"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 fv-row">
+                  <!--end::Label-->
+                  <label class="required fs-3 fw-semibold mb-2">นามสกุล</label>
+                  <!--end::Label-->
+                  <!--end::Input-->
+                  <input
+                    type="text"
+                    class="form-control form-control-solid-bg"
+                    placeholder=""
+                    name="last_name"
+                  />
+                  <!--end::Input-->
+                </div>
+              </div>
+              <div class="row mb-5">
+                <!--begin::Col-->
+                <div class="col-md-6 fv-row">
+                  <!--begin::Label-->
+                  <label class="required fs-3 fw-semibold mb-2">Email</label>
+                  <!--end::Label-->
+                  <!--begin::Input-->
+                  <input
+                    class="form-control form-control-solid-bg"
+                    placeholder=""
+                    name="email"
+                  />
+                  <!--end::Input-->
+                </div>
+                <!--end::Col-->
+                <!--begin::Col-->
+                <div class="col-md-6 fv-row">
+                  <!--end::Label-->
+                  <label class="required fs-3 fw-semibold mb-2"
+                    >Mobile No</label
+                  >
+                  <!--end::Label-->
+                  <!--end::Input-->
+                  <input
+                    type="text"
+                    class="form-control form-control-solid-bg"
+                    placeholder=""
+                    name="phone"
+                  />
+                  <!--end::Input-->
+                </div>
+                <!--end::Col-->
+              </div>
+
+              <div class="row mb-5">
+                <div class="col-md-6 fv-row">
+                  <label class="required fs-3 fw-semibold mb-2">อายุ</label>
+                  <input
+                    type="text"
+                    class="form-control form-control-solid-bg"
+                    placeholder=""
+                    name="age"
+                  />
+                </div>
+                <div class="col-md-6 fv-row">
+                  <label class="fs-3 fw-semibold mb-2">ยอดเงินลงทุน</label>
+                  <input
+                    type="text"
+                    class="form-control form-control-solid-bg"
+                    placeholder=""
+                    name="init_investment"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-5">
+                <div class="col-md-12 fv-row">
+                  <label for="line" class="required fs-3 fw-semibold mb-2"
+                    >Line</label
+                  >
+                  <input
+                    type="text"
+                    name="line"
+                    id="line"
+                    class="form-control form-control-solid-bg social"
+                  />
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-12 fv-row">
+                  <label for="facebook" class="fs-3 fw-semibold mb-2"
+                    >Facebook</label
+                  >
+                  <input
+                    type="text"
+                    name="facebook"
+                    id="facebook"
+                    class="form-control form-control-solid-bg social"
+                  />
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-12 fv-row">
+                  <label for="telegram" class="required fs-3 fw-semibold mb-2"
+                    >Telegram ID</label
+                  ><span class="text-gray-600 text-xs">
+                    (เพื่อใช้เข้าห้อง Signal)</span
+                  >
+                  <div class="d-block mb-2 text-danger fw-bold">
+                    หมายเหตุ: Telegram ID จะไม่ใช่ username ของผู้ใช้ โดย ID
+                    จะเป็นข้อความที่เป็นตัวเลขทั้งหมด
+                  </div>
+                  <a
+                    href="assets/media/create_telegram_account.pdf"
+                    target="_blank"
+                    title="ขั้นตอนสมัคร Telegram"
+                    class="d-block mb-2"
+                    >ขั้นตอนสมัคร Telegram และวิธีการหา Telegram ID</a
+                  >
+                  <input
+                    type="text"
+                    name="telegram"
+                    id="telegram"
+                    class="form-control form-control-solid-bg"
+                  />
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-12 fv-row">
+                  <label class="fs-3 fw-semibold mb-2"
+                    >คุณมีประสบการณ์ในการลงทุนในสินทรัพย์ประเภทใดบ้าง</label
+                  >
+                  <label for="invest_stock" class="form-check mb-5">
+                    <input
+                      type="checkbox"
+                      id="invest_stock"
+                      name="invested"
+                      value="Stock"
+                      class="form-check-input"
+                    /><span class="form-check-label text-gray-800 fs-3"
+                      >Stock</span
+                    ></label
+                  >
+                  <label for="invest_derivative" class="form-check mb-5">
+                    <input
+                      type="checkbox"
+                      id="invest_derivative"
+                      name="invested"
+                      value="Derivative"
+                      class="form-check-input"
+                    /><span class="form-check-label text-gray-800 fs-3"
+                      >Derivative</span
+                    ></label
+                  >
+                  <label for="invest_crypto" class="form-check mb-5">
+                    <input
+                      type="checkbox"
+                      id="invest_crypto"
+                      name="invested"
+                      value="Stock"
+                      class="form-check-input"
+                    /><span class="form-check-label text-gray-800 fs-3"
+                      >Cryptocurrency</span
+                    ></label
+                  >
+                  <label for="invest_forex" class="form-check mb-5">
+                    <input
+                      type="checkbox"
+                      id="invest_forex"
+                      name="invested"
+                      value="Forex"
+                      class="form-check-input"
+                    /><span class="form-check-label text-gray-800 fs-3"
+                      >Forex</span
+                    ></label
+                  >
+                  <label for="invest_none" class="form-check mb-5">
+                    <input
+                      type="checkbox"
+                      id="invest_none"
+                      name="invested"
+                      value="None"
+                      class="form-check-input"
+                    /><span class="form-check-label text-gray-800 fs-3"
+                      >ไม่มีประสบการณ์ในการลงทุน</span
+                    ></label
+                  >
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-12 fv-row">
+                  <label for="product" class="fs-3 fw-semibold mb-2"
+                    >คุณเคยใช้บริการห้อง Signal หรือไม่</label
+                  >
+                  <div class="form-control form-control-transparent">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="use_other_signal"
+                        id="other_signal_yes"
+                        value="Yes"
+                      />
+                      <label
+                        for="other_signal_yes"
+                        class="form-check-label text-gray-800 fs-3"
+                        >เคย</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="use_other_signal"
+                        id="other_signal_no"
+                        value="No"
+                      />
+                      <label
+                        for="other_signal_no"
+                        class="form-check-label text-gray-800 fs-3"
+                        >ไม่เคย</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-5">
+                <div class="col-md-12 fv-row">
+                  <label for="product" class="fs-3 fw-semibold mb-2"
+                    >ถ้าเคยใช้บริการ พอจะบอกได้ไหมว่าใช้ของเจ้าใด</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control form-control-solid-bg"
+                    placeholder=""
+                    name="other_signal"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 fv-row">
+                  <label for="product" class="fs-3 fw-bold mb-2"
+                    >ต้องการใช้บริการ Signal Premium (สมาชิกรายเดือน)</label
+                  >
+                </div>
+              </div>
+
+              <div id="period" class="row mb-5">
+                <div class="col-md-12 fv-row">
+                  <div class="required fs-3 fw-semibold mb-2">
+                    ระยะเวลาใช้บริการ
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      type="radio"
+                      id="periodFree"
+                      name="period"
+                      value="free"
+                      class="form-check-input"
+                    />
+                    <label
+                      class="form-check-label text-gray-900 fs-4"
+                      for="periodFree"
+                    >
+                      ทดลองใช้ Free 30 วัน
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      type="radio"
+                      id="period30d"
+                      name="period"
+                      value="30d"
+                      class="form-check-input"
+                    />
+                    <label
+                      class="form-check-label text-gray-900 fs-4"
+                      for="period30d"
+                    >
+                      30 วัน ราคาโปรโมชั่น 4xx บาท จากราคาเต็ม 659 บาท
+                    </label>
+                  </div>
+                  <!-- <div class="form-check mb-3">
+                    <input
+                      type="radio"
+                      id="period90d"
+                      name="period"
+                      value="90d"
+                      class="form-check-input"
+                    />
+                    <label
+                      class="form-check-label text-gray-900 fs-4"
+                      for="period90d"
+                    >
+                      90 วัน 1,099 บาท
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      type="radio"
+                      id="period180d"
+                      name="period"
+                      value="180d"
+                      class="form-check-input"
+                    />
+                    <label
+                      class="form-check-label text-gray-900 fs-4"
+                      for="period180d"
+                    >
+                      180 วัน 2,099 บาท
+                    </label>
+                  </div>
+
+                  <div class="form-check mb-3">
+                    <input
+                      type="radio"
+                      id="period1y"
+                      name="period"
+                      value="365d"
+                      class="form-check-input"
+                    />
+                    <label
+                      class="form-check-label text-gray-900 fs-4"
+                      for="period1y"
+                    >
+                      365 วัน 3,999 บาท
+                    </label>
+                  </div> -->
+                </div>
+              </div>
+
+              <div id="accept_risk" class="row mb-5">
+                <div class="col-md-12 fv-row">
+                  <label
+                    class="form-check form-check-custom form-check-solid form-check-inline mb-5"
+                  >
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="accept_risk"
+                      value="1"
+                    />
+                    <span class="form-check-label fs-3 text-gray-700"
+                      >ข้าพเจ้าเข้าใจและยอมรับความเสี่ยงด้วยตนเอง
+                      และยอมรับเงื่อนไขการให้บริการ
+                    </span>
+                  </label>
+                  <div class="text-danger text-xs">
+                    * การลงทุนมีความเสี่ยง
+                    ผู้ลงทุนควรศึกษาข้อมูลก่อนการตัดสินใจลงทุน
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-5">
+                <div class="col-md-12 fv-row">
+                  <button
+                    type="button"
+                    class="btn btn-primary w-100"
+                    id="form_submit_button"
+                  >
+                    <span class="indicator-label">ลงทะเบียน</span>
+                    <span class="indicator-progress"
+                      >ลงทะเบียน...
+                      <span
+                        class="spinner-border spinner-border-sm align-middle ms-2"
+                      ></span
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="card card-flush w-lg-800px d-none" id="success_message">
+            <svg
+              class="mb-4 mx-auto"
+              viewBox="0 0 20 20"
+              fill="#48bb78"
+              style="width: 5rem; height: 5rem"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <h2 class="text-center mb-4">ลงทะเบียนเรียบร้อย</h2>
+            <div class="text-gray-600"></div>
+            <button class="btn btn-outline mx-auto" id="back_btn">
+              ย้อนกลับ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/plugins/global/plugins.bundle.js"></script>
+    <script src="assets/js/scripts.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.3.7/dist/latest/bootstrap-autocomplete.min.js"></script>
+    <script>
+      const form_url =
+        "https://script.google.com/macros/s/AKfycbyQSKM7R8fwBFToWqU7Zq3vmxTFwRSzSTaQuyuXI6UcWScJ7YxO5BB8nPeH0JTkTiVzyQ/exec";
+
+      // function handleProduct(product) {
+      //   if (product.length > 0) {
+      //     if (
+      //       product.localeCompare("signal free", undefined, {
+      //         sensitivity: "base",
+      //       }) === 0
+      //     ) {
+      //       validation.disableValidator("period");
+      //       validation.disableValidator("broker_ib");
+      //       validation.disableValidator("mt_account_number");
+      //       validation.disableValidator("broker_social");
+      //       $("#period").hide();
+      //       $("#broker").hide();
+      //       $("#broker_social").hide();
+      //       $("#accept_risk").show();
+      //     } else if (
+      //       product.localeCompare("signal member", undefined, {
+      //         sensitivity: "base",
+      //       }) === 0
+      //     ) {
+      //       validation.disableValidator("period");
+      //       validation.enableValidator("broker_ib");
+      //       validation.enableValidator("mt_account_number");
+      //       validation.disableValidator("broker_social");
+      //       $("#period").hide();
+      //       $("#broker").show();
+      //       $("#broker_social").hide();
+      //       $("#accept_risk").show();
+      //     } else if (
+      //       product.localeCompare("signal premium", undefined, {
+      //         sensitivity: "base",
+      //       }) === 0
+      //     ) {
+      //       validation.enableValidator("period");
+      //       validation.disableValidator("broker_ib");
+      //       validation.disableValidator("mt_account_number");
+      //       validation.disableValidator("broker_social");
+      //       $("#period").show();
+      //       $("#broker").hide();
+      //       $("#broker_social").hide();
+      //       $("#accept_risk").show();
+      //     } else if (
+      //       product.localeCompare("social trading", undefined, {
+      //         sensitivity: "base",
+      //       }) === 0
+      //     ) {
+      //       validation.disableValidator("period");
+      //       validation.disableValidator("broker_ib");
+      //       validation.disableValidator("mt_account_number");
+      //       validation.enableValidator("broker_social");
+      //       $("#period").hide();
+      //       $("#broker").hide();
+      //       $("#broker_social").show();
+      //       $("#accept_risk").show();
+      //     }
+      //   } else {
+      //     validation.disableValidator("period");
+      //     validation.disableValidator("broker_ib");
+      //     validation.disableValidator("mt_account_number");
+      //     validation.disableValidator("broker_social");
+      //     $("#period").hide();
+      //     $("#broker").hide();
+      //     $("#broker_social").hide();
+      //     $("#accept_risk").hide();
+      //   }
+      // }
+
+      function handleSubmit(event) {
+        console.log("Submit");
+        event.preventDefault();
+
+        validation &&
+          validation.validate().then((fv) => {
+            console.log(`validate: ${fv}`);
+            if ("Valid" == fv) {
+              button = $(event.target);
+              button.attr("data-kt-indicator", "on");
+              button.prop("disabled", true);
+              // Disable indicator after 3 seconds
+              setTimeout(function () {
+                button.removeAttr("data-kt-indicator");
+                button.prop("disabled", false);
+              }, 3000);
+
+              let request_body = new FormData(
+                document.querySelector("#ymc_form")
+              );
+              fetch(form_url, {
+                method: "POST",
+                body: request_body,
+                mode: "no-cors",
+              })
+                .then((resp) => {
+                  console.log("Success", resp);
+                  $("#input_form").addClass("d-none");
+                  $("#success_message").removeClass("d-none");
+                })
+                .catch((err) => {
+                  console.log("Error: " + err);
+                });
+            }
+          });
+      }
+      KTUtil.onDOMContentLoaded(async () => {
+        // console.log("Loading...");
+        rf = document.querySelector("#ymc_form");
+        validation = FormValidation.formValidation(rf, {
+          fields: {
+            title: {
+              validators: {
+                notEmpty: {
+                  message: "กรุณาเลือกคำนำหน้า",
+                },
+              },
+            },
+            first_name: {
+              validators: {
+                notEmpty: {
+                  message: "กรุณากรอกชื่อ",
+                },
+              },
+            },
+            last_name: {
+              validators: {
+                notEmpty: {
+                  message: "กรุณากรอกนามสกุล",
+                },
+              },
+            },
+            email: {
+              validators: {
+                notEmpty: {
+                  message: "กรุณากรอก email",
+                },
+                emailAddress: {
+                  message: "รูปแบบชื่ออีเมลไม่ถูกต้อง",
+                },
+              },
+            },
+            phone: {
+              validators: {
+                notEmpty: {
+                  message: "กรุณากรอกเบอร์มือถือ",
+                },
+              },
+            },
+            age: {
+              validators: {
+                notEmpty: {
+                  message: "กรุณากรอกอายุ",
+                },
+                integer: {
+                  message: "กรุณากรอกเฉพาะตัวเลข",
+                },
+              },
+            },
+            line: {
+              validators: {
+                notEmpty: {
+                  message: "กรุณากรอก Line",
+                },
+              },
+            },
+            // social: {
+            //   selector: ".social",
+            //   validators: {
+            //     callback: {
+            //       message: "กรุณากรอกช่องทางสำหรับติดต่อกับ admin",
+            //       callback: function (input) {
+            //         let is_empty = true;
+            //         const elements = validation.getElements("social");
+            //         for (const i in elements) {
+            //           if (elements[i].value !== "") {
+            //             is_empty = false;
+            //             break;
+            //           }
+            //         }
+            //         if (!is_empty) {
+            //           validation.updateFieldStatus(
+            //             "social",
+            //             "Valid",
+            //             "callback"
+            //           );
+            //           return true;
+            //         }
+            //         return false;
+            //       },
+            //     },
+            //   },
+            // },
+            telegram: {
+              validators: {
+                notEmpty: {
+                  message:
+                    'กรุณากรอก Telegram ID สามารถอ่านขั้นตอนการหา Telegram ID ได้จาก <a href="assets/media/create_telegram_account.pdf" target="_blank" title="ขั้นตอนสมัคร Telegram" class="">ขั้นตอนสมัคร Telegram และวิธีการหา Telegram ID</a>',
+                },
+                integer: {
+                  message:
+                    'กรุณากรอกเฉพาะตัวเลข สามารถอ่านขั้นตอนการหา Telegram ID ได้จาก <a href="assets/media/create_telegram_account.pdf" target="_blank" title="ขั้นตอนสมัคร Telegram" class="">ขั้นตอนสมัคร Telegram และวิธีการหา Telegram ID</a>',
+                },
+              },
+            },
+            product: {
+              selector: "#product",
+              validators: {
+                notEmpty: {
+                  message: "กรุณากรอกเลือกบริการ",
+                },
+              },
+            },
+            period: {
+              validators: {
+                notEmpty: {
+                  message: "กรุณาเลือกระยะเวลาใช้บริการ",
+                },
+              },
+            },
+            broker_ib: {
+              validators: {
+                notEmpty: {
+                  message: "กรุณาเลือก Broker ที่ให้บริการ",
+                },
+              },
+            },
+            mt_account_number: {
+              validators: {
+                notEmpty: {
+                  message: "กรุณากรอกข้อมูล MT4/MT5 account number",
+                },
+              },
+            },
+            broker_social: {
+              validators: {
+                choice: {
+                  min: 1,
+                  message: "กรุณาเลือก Broker",
+                },
+              },
+            },
+            accept_risk: {
+              validators: {
+                choice: {
+                  min: 1,
+                  message: "กรุณายอมรับข้อกำหนดในการให้บริการ",
+                },
+              },
+            },
+          },
+          plugins: {
+            trigger: new FormValidation.plugins.Trigger(),
+            bootstrap: new FormValidation.plugins.Bootstrap5({
+              rowSelector: ".fv-row",
+              eleInvalidClass: "",
+              eleValidClass: "",
+            }),
+          },
+        });
+        $("input[name='title']").change(function (e) {
+          $("#titlelabel").text($(this).val());
+        });
+        // $("select#product").on("change", (event) => {
+        //   var value = event.target.value;
+        //   console.log("Product: " + value);
+        //   handleProduct(value);
+        // });
+        $("#form_submit_button").on("click", handleSubmit);
+        $("#back_btn").on("click", () => {
+          $("#input_form").removeClass("d-none");
+          $("#success_message").addClass("d-none");
+        });
+      });
+    </script>
+  </body>
+</html>
