@@ -18,6 +18,16 @@
       body {
         background: #6cabb7;
       }
+
+      @media (max-width: 400px) {
+        img.logo {
+          height: 20px !important;
+          margin-top: 15px;
+        }
+        #header-text {
+          margin-top: -25px !important;
+        }
+      }
     </style>
   </head>
   <body>
@@ -31,15 +41,19 @@
               class="mb-10 pb-5"
               style="border-bottom: 1px solid #e3ebf6; margin-top: -20px"
             >
-              <header class="fw-bolder m-0 pb-2">
+              <header class="fw-bolder m-0">
                 <div class="d-inline-flex">
                   <img
                     src="./assets/media/logo.png"
-                    class=""
+                    class="logo"
                     style="height: 70px"
                   />
                 </div>
-                <div class="d-block text-center" style="margin-top: -50px">
+                <div
+                  id="header-text"
+                  class="d-block text-center"
+                  style="margin-top: -50px"
+                >
                   <h1>
                     <span class="d-inline-block" style="color: #1f4c57"
                       >ฟอร์มลงทะเบียน YMC Crypto</span
